@@ -1,1 +1,23 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+:root {
+	color-scheme: light dark;
+	--dark: darkslategrey;
+	--light: beige;
+	--fg: light-dark(var(--dark), var(--light));
+	--bg: light-dark(var(--light), var(--dark));
+	color: var(--fg);
+	background: var(--bg);
+}
+
+:root:has(option[id="theme-system"]:checked) {
+	color-scheme: light dark;
+}
+
+:root:has(option[id="theme-light"]:checked) {
+	color-scheme: light;
+}
+
+:root:has(option[id="theme-dark"]:checked) {
+	color-scheme: dark;
+}
