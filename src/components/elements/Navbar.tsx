@@ -2,6 +2,7 @@ import Container from "../shared/Container";
 import logo from "../../assets/icon.svg";
 import NavItem from "../shared/NavItem";
 import ButtonLink from "../shared/ButtonLink";
+import ThemeSelect from "../shared/ThemeSelect";
 
 const navItems = [
 	{ id: 1, href: "#", text: "Home" },
@@ -30,7 +31,7 @@ function Navbar() {
 							))}
 						</ul>
 						<div className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px-6 lg:px-0">
-							<ButtonLink text="Get Started" href="#cta" />
+							<ThemeSelect />
 						</div>
 					</div>
 				</nav>
